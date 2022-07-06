@@ -117,6 +117,7 @@ body {
     text-decoration: line-through;
 }
 
+.task-details{
     background-color: white;
     padding: 30px 30px;
     position: relative;
