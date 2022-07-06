@@ -14,26 +14,37 @@ body {
 }
 
 .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 50px;
     border: 2px solide white;
-    width: 40%;
+    width: 80%;
     min-width: 450px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     padding: 30px 20px;
+    overflow: auto;
 }
-#newtask{
+
+.child {
+    margin: 10px;
+    border: 1px solid red;
+}
+
+#newtask {
     position: relative;
     background-color: #ffffff;
     padding: 30px 20px;
     border-radius: 5px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.24);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.24);
 }
-#newtask input{
+
+#newtask input {
     width: 70%;
     height: 45px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     border: 2px solid #d1d3d4;
     border-radius: 5px;
@@ -42,17 +53,19 @@ body {
     position: relative;
     padding: 3%;
 }
-#newtask input:focus{
+
+#newtask input:focus {
     outline: none;
     border-color: #8052ec;
 }
-#newtask button{
+
+#newtask button {
     position: relative;
     float: right;
     width: 20%;
     height: 45px;
     border-radius: 5px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 15px;
     background-color: #ded0e3;
@@ -60,16 +73,18 @@ body {
     color: #111111;
     cursor: pointer;
 }
-#tasks{
+
+#tasks {
     background-color: #ffffff;
     padding: 30px 20px;
     margin-top: 60px;
     border-radius: 5px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     width: 100;
     position: relative;
 }
-.task{
+
+.task {
     background-color: #ffffff;
     height: 50px;
     padding: 5px 10px;
@@ -80,12 +95,14 @@ body {
     border-bottom: 2px solid #d1d3d4;
     cursor: pointer;
 }
-.task span{
-    font-family: 'Poppins',sans-serif;
+
+.task span {
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
-.task button{
+
+.task button {
     background-color: #8052ec;
     color: #ffffff;
     height: 100%;
@@ -94,4 +111,15 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+#task-details{
+    background-color: white;
+    padding: 30px 30px;
+    position: relative;
+    margin-top: 60px;
 }
