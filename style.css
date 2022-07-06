@@ -1,4 +1,6 @@
-*,
+*{
+    font-family: 'Poppins', sans-serif;
+}
 *:before,
 *:after {
     padding: 0;
@@ -43,7 +45,7 @@ body {
 
 #newtask input {
     width: 70%;
-    height: 45px;
+    height: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     border: 2px solid #d1d3d4;
@@ -74,9 +76,13 @@ body {
     cursor: pointer;
 }
 
+#newtask button:hover{
+    background-color:#b8acbc ;
+}
+
 #tasks {
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding:25px 20px;
     margin-top: 60px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -86,7 +92,7 @@ body {
 
 .task {
     background-color: #ffffff;
-    height: 50px;
+    height: auto;
     padding: 5px 10px;
     margin-top: 10px;
     display: flex;
@@ -105,12 +111,17 @@ body {
 .task button {
     background-color: #8052ec;
     color: #ffffff;
-    height: 100%;
-    width: 40px;
+    height: auto;
+    width: auto;
+    padding: 15px 15px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     outline: none;
+}
+
+.task button:hover{
+    background-color: #6b41cd;
 }
 
 .completed {
@@ -121,4 +132,6 @@ body {
     background-color: white;
     padding: 30px 30px;
     position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
