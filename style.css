@@ -11,8 +11,20 @@
 body {
     height: 100vh;
     background: linear-gradient(135deg,
-            #8052ec,
-            #d161ff);
+            #1f1e20,
+            #211b23);
+}
+
+.heading1{
+    background-color: #d9d8da;
+    padding: 30x 20px;
+    position: fixed;
+    width: 50%;
+    top: 5%;
+    border-radius: 8px;
+    text-align: center;
+    transform: translate(50%,50%);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.24);
 }
 
 .container {
@@ -20,7 +32,7 @@ body {
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
     border: 2px solide white;
-    width: 80%;
+    width: 65%;
     min-width: 450px;
     position: absolute;
     transform: translate(-50%, -50%);
