@@ -16,7 +16,12 @@
     <div class="container">
         <div id="child">
             <div id="newtask">
-                <input type="text" placeholder="Enter Task name">
+                <label for="taskname">Taskname</label>
+                <input type="text" id="taskname" placeholder="Enter Task name">
+                <label for="desc">Description</label>
+                <input type="textarea" id="desc" placeholder="Enter Description">
+                <label for="completion">Due-Date</label>
+                <input type="datetime-local" id="completion">
                 <button id="push">ADD</button>
             </div>
             <div id="tasks"></div>
@@ -24,7 +29,7 @@
         <div id="child">
             <div class="task-details">
                 <span id="task-name">Select a task</span>
-                <span id ="date"></span>
+                <span id="date"></span>
             </div>
         </div>
     </div>
