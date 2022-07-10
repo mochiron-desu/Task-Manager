@@ -5,7 +5,8 @@ var date = []
 var data = {
     taskname: [],
     desc: [],
-    date: []
+    date: [],
+    completed: []
 }
 
 
@@ -36,6 +37,7 @@ document.querySelector('#push').onclick = function () {
         data.taskname.push(taskname_input.value)
         data.desc.push(desc_input.value)
         data.date.push(date_input.value)
+        data.completed.push(0)
         console.log(data)
 
         //data.task.splice(i,1) //for deletion
@@ -68,9 +70,16 @@ document.querySelector('#push').onclick = function () {
             <div class="task-details-child">
                 <span id="task-name">Task: ${data.taskname[i]}</span><br>
                 <span id="task-desc">Description: ${data.desc[i]}</span><br>
-                <span id="task-date">Due-Date: ${data.date[i]}</span>
+                <span id="task-date">Due-Date: ${data.date[i]}</span><br>
+                <button id="complete">
+                <i class="fa-solid fa-check"></i>
+                </button>
             </div>
-            `
+            `;
+            document.querySelector("#complete").onclick = function () {
+                data.completed[i]=1;
+                tasks[i].setAttribute("class","completed");
+            }
         }
     }
 }
